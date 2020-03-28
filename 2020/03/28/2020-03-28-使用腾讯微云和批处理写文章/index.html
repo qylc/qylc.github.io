@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8" >
+    <meta name="baidu-site-verification" content="dIcXMeY8Ya" />
+    
+    <title>使用腾讯微云和批处理写文章 | 心灵鸡汤</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" >
+    <meta name="keywords" content="心灵鸡汤, 靓汤" >
+    <meta name="description" content="心灵鸡汤小站" >
+
+    
+    <link rel="alternative" href="/atom.xml" title="心灵鸡汤" type="application/atom+xml" >
+    
+    
+    <link rel="shortcut icon" href="/favicon.ico" >
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!--[if lt IE 9]>
+    
+<script src="/js/html5.js"></script>
+
+    <![endif]-->
+
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="home">
+    <!--[if lt IE 9]>
+    <div class="browsehappy">
+        当前网页 <strong>不支持</strong>
+        你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/" target="_blank" rel="noopener">升级你的浏览器</a>.
+    </div>
+    <![endif]-->
+
+    <!-- 博客头部 -->
+    <header class="header">
+    <section class="container header-main">
+        <div class="logo">
+            <a href="/">
+                <div class="cover">
+                    <span class="name">心灵鸡汤</span>
+                    <span class="description">一个人一个活法</span>
+                </div>
+            </a>
+        </div>
+        <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
+        <ul class="menu hidden" id="JELON__menu">
+            
+            <li rel="/2020/03/28/2020-03-28-%E4%BD%BF%E7%94%A8%E8%85%BE%E8%AE%AF%E5%BE%AE%E4%BA%91%E5%92%8C%E6%89%B9%E5%A4%84%E7%90%86%E5%86%99%E6%96%87%E7%AB%A0/index.html" class="item ">
+                <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
+            </li>
+            
+            <li rel="/2020/03/28/2020-03-28-%E4%BD%BF%E7%94%A8%E8%85%BE%E8%AE%AF%E5%BE%AE%E4%BA%91%E5%92%8C%E6%89%B9%E5%A4%84%E7%90%86%E5%86%99%E6%96%87%E7%AB%A0/index.html" class="item ">
+                <a href="/lab/" title="鸡汤文" class="icon-lab">&nbsp;鸡汤文</a>
+            </li>
+            
+            <li rel="/2020/03/28/2020-03-28-%E4%BD%BF%E7%94%A8%E8%85%BE%E8%AE%AF%E5%BE%AE%E4%BA%91%E5%92%8C%E6%89%B9%E5%A4%84%E7%90%86%E5%86%99%E6%96%87%E7%AB%A0/index.html" class="item ">
+                <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
+            </li>
+            
+            <li rel="/2020/03/28/2020-03-28-%E4%BD%BF%E7%94%A8%E8%85%BE%E8%AE%AF%E5%BE%AE%E4%BA%91%E5%92%8C%E6%89%B9%E5%A4%84%E7%90%86%E5%86%99%E6%96%87%E7%AB%A0/index.html" class="item ">
+                <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
+            </li>
+            
+        </ul>
+        <div class="profile clearfix">
+            <div class="feeds fl">
+                
+                
+                <p class="links">
+                    
+                        <a href="https://github.com/qylc" target="_blank">Github</a>
+                        |
+                    
+                        <a href="https://www.github.com" target="_blank">Hosted by Github Pages</a>
+                        
+                    
+                </p>
+                <p class="sns">
+                    
+                        <a href="https://www.zhihu.com/people/li-bai-duan-liao-yi-wan-tang" class="1" target="_blank"><b>■</b> 知乎</a>
+                    
+                        <a href="mailto://i@soulsoup.cn" class="2" target="_blank"><b>■</b> 邮箱</a>
+                    
+                    <a href="javascript: void(0);" class="wechat">
+                        <b>■</b>
+                        公众号
+                        <span class="popover">
+                            <img src="/img/wechat_mp.jpg" width="120" height="120" alt="我的微信订阅号">
+                            <i class="arrow"></i>
+                        </span>
+                    </a>
+                </p>
+                
+            </div>
+            <div class="avatar fr">
+                <img src="/img/jelon.jpg" alt="avatar" title="Jelon" >
+            </div>
+        </div>
+    </section>
+</header>
+
+
+    <!-- 博客正文 -->
+    <div class="container body clearfix">
+        <section class="content">
+            <div class="content-main widget">
+                <!-- 文章页 -->
+<!-- 文章 -->
+<article class="post article">
+    <header class="text-center">
+        <h3 class="post-title"><span>使用腾讯微云和批处理写文章</span></h3>
+    </header>
+    <p class="post-meta text-center">
+        Jelon 发表于
+        <time datetime="2020-03-27T16:14:46.000Z">2020-03-28</time>
+    </p>
+    <div class="post-content">
+        <p>之前使用的是git来保存文章，同时用到 github actions 来实现自动部署，可能是之前一直写程序，CI、CD思想根深蒂固。每次写完博客，提交git，过几分钟后网站生成。</p>
+<p>但是发现其实好像脱离写文章本省。</p>
+<p>现在使用本地环境写文章，写完之后执行一条 hexo d 命令即可，甚至可以将命令写成脚本，双击一下即可。</p>
+<p>至于文件备份，我使用了腾讯微云，会自动将文章更新到云端，保证不丢失</p>
+
+    </div>
+    <p class="post-meta">
+        <span class="post-cat">分类：
+            <a class="cat-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+        </span>
+        <span class="post-tags">
+            标签：
+            
+        </span>
+    </p>
+</article>
+<!-- 分享按钮 -->
+
+
+<!-- 上一篇/下一篇 -->
+
+<div class="article-nav clearfix">
+    
+    <span class="prev fl">
+        上一篇<br >
+        <a href="/2020/03/28/2020-03-28-%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95/">
+            
+                2020-03-28-劳动合同法
+            
+        </a>
+    </span>
+    
+
+    
+    <span class="next fr">
+        下一篇<br >
+        <a href="/2020/03/15/2020-03-15-Trailer%20Music/">
+            
+                Trailer Music
+            
+        </a>
+    </span>
+    
+</div>
+
+<!-- 文章评论 -->
+<div id="vcomments"></div>
+
+<script src="/js/Valine.min.js"></script>
+
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '8SGu2sSyTB4yV7E1UqXLEpDR-9Nh9j0Va',
+        appKey: '7WfzBtVaJgLckJX3BP9H7rc2'
+    })
+</script>
+
+            </div>
+
+        </section>
+        <!-- 侧栏部分 -->
+<aside class="sidebar">
+    
+    <section class="widget">
+        <h3 class="widget-hd"><strong>文章搜索</strong></h3>
+        <div class="search-form">
+  <form
+    id="searchForm"
+    method="GET"
+    action="https://www.baidu.com/s"
+    ectype="application/x-www-form-urlencoded"
+    target="_blank"
+    autocomplete="false"
+    onsubmit="javascript: return false;">
+    <input
+      id="searchKeyword"
+      type="text"
+      class="form-control"
+      placeholder="输入关键字搜索"
+      autocomplete="false"
+    />
+    <input id="searchKeywordHidden" type="hidden" name="wd" />
+    <input id="searchButton" class="btn" type="submit" value="搜索" />
+  </form>
+</div>
+    </section>
+    
+
+    <section class="widget">
+        <h3 class="widget-hd"><strong>文章分类</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+    <li>
+        <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+</ul>
+    </section>
+
+    
+    <section class="widget">
+        <h3 class="widget-hd"><strong>热门标签</strong></h3>
+        <!-- 文章标签 -->
+<div class="widget-bd tag-wrap">
+  
+    <a class="tag-item" href="/tags/%E9%9A%8F%E7%AC%94/" title="随笔">随笔 (2)</a>
+  
+    <a class="tag-item" href="/tags/%E8%AF%97%E8%AF%8D/" title="诗词">诗词 (1)</a>
+  
+    <a class="tag-item" href="/tags/%E5%B7%A5%E5%85%B7/" title="工具">工具 (3)</a>
+  
+    <a class="tag-item" href="/tags/%E5%8F%A4%E6%96%87/" title="古文">古文 (1)</a>
+  
+    <a class="tag-item" href="/tags/%E9%9F%B3%E4%B9%90/" title="音乐">音乐 (2)</a>
+  
+    <a class="tag-item" href="/tags/%E9%B8%A1%E6%B1%A4/" title="鸡汤">鸡汤 (1)</a>
+  
+</div>
+    </section>
+    
+
+    
+
+    
+    <!-- 友情链接 -->
+    <section class="widget">
+        <h3 class="widget-hd"><strong>友情链接</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+        <li>
+            <a href="http://www.gzqylc.com" target="_blank" title="东家的官网">黔云联创</a>
+        </li>
+    
+        <li>
+            <a href="https://tophub.today/" target="_blank" title="今日热榜">今日热榜</a>
+        </li>
+    
+        <li>
+            <a href="https://www.yuque.com/" target="_blank" title="一个记录知识的地方">语雀</a>
+        </li>
+    
+</ul>
+    </section>
+    
+</aside>
+<!-- / 侧栏部分 -->
+    </div>
+
+    <!-- 博客底部 -->
+    <footer class="footer">
+    &copy;
+    
+        2016-2020
+    
+
+    <a href="/">Jelon Loves You</a>
+</footer>
+<div class="back-to-top" id="JELON__backToTop" title="返回顶部">返回顶部</div>
+
+    <!--博客js脚本 -->
+    <!-- 这里放网站js脚本 -->
+
+<script src="/js/main.js?v=1585388311215.js"></script>
+
+</body>
+</html>
