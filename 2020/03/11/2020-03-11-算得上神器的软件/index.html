@@ -204,7 +204,11 @@
     new Valine({
         el: '#vcomments',
         appId: '8SGu2sSyTB4yV7E1UqXLEpDR-9Nh9j0Va',
-        appKey: '7WfzBtVaJgLckJX3BP9H7rc2'
+        appKey: '7WfzBtVaJgLckJX3BP9H7rc2',
+		visitor: true, // 阅读量统计
+		placeholder: '说点什么吧',
+		notify: true,
+		recordIP: true
     })
 </script>
 
@@ -246,6 +250,11 @@
     
     <li>
         <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/%E6%B3%95%E5%BE%8B/">法律</a>
         <span class="badge">(1)</span>
     </li>
     
@@ -316,7 +325,7 @@
     <!--博客js脚本 -->
     <!-- 这里放网站js脚本 -->
 
-<script src="/js/main.js?v=1585388311223.js"></script>
+<script src="/js/main.js?v=1585389447281.js"></script>
 
 </body>
 </html>
